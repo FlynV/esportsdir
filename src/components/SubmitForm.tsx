@@ -108,7 +108,7 @@ export function SubmitForm() {
   
   return (
     <form 
-      action="https://formsubmit.co/ajax/flynvlr@gmail.com" 
+      action="https://formsubmit.co/flynvlr@gmail.com" 
       method="POST" 
       className="space-y-8"
       onSubmit={handleSubmit}
