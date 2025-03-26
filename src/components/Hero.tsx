@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,9 @@ export function Hero() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/tools?search=${encodeURIComponent(searchQuery)}`);
+      navigate(`/tools?search=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      navigate('/tools');
     }
   };
 
