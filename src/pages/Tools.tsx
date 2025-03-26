@@ -21,7 +21,7 @@ const Tools = () => {
     const params = new URLSearchParams(location.search);
     
     setSearchParams({
-      search: params.get("search") || undefined,
+      search: params.get("search")?.trim() || undefined,
       game: params.get("game") as Game || undefined,
       category: params.get("category") as ToolCategory || undefined,
     });
