@@ -69,7 +69,8 @@ export function ToolGrid({
         tool.category.toLowerCase().includes(query) ||
         tool.games.some(game => game.toLowerCase().includes(query)) ||
         tool.pricing.toLowerCase().includes(query) ||
-        tool.developer.name.toLowerCase().includes(query)
+        tool.developer.name.toLowerCase().includes(query) ||
+        tool.features.some(feature => feature.toLowerCase().includes(query))
       );
     }
     
