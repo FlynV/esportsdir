@@ -221,7 +221,7 @@ export const tools: Tool[] = [
   {
     id: 'augment',
     name: 'Augment',
-    description: "A CS2 and esports performance tracking platform focused on in-depth analytics.",
+    description: "A Valorant and esports performance tracking platform focused on in-depth analytics.",
     shortDescription: "Deep analytics for CS2 and esports performance",
     images: ['https://www.google.com/s2/favicons?domain=augment.gg&sz=256'],
     featured: false,
